@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/******margin-out居中******/
+.margin-out-1000 {
+  width: 1000px;
+  margin: 0 auto; }
+
+.margin-out-800 {
+  width: 800px;
+  margin: 0 auto; }
+
+.l {
+  float: left; }
+
+.r {
+  float: right; }
+
+/*# sourceMappingURL=global.css.map */

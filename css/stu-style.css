@@ -1,0 +1,200 @@
+/*单页应用，图片铺满*/
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	font-family: "Microsoft Yahei";
+}
+/*纵向*/
+@media(orientation : portrait){
+	/*页面主体*/
+	.main{
+		height: 95%;
+		position: relative;
+		background-image: url(../pic-stu/background.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	/*logo*/
+	.logo{
+		position: absolute;
+		left: 5%;
+		top: 3%;
+		width: 39%;
+		/*height: 6%;*/
+		height: 5rem;
+		background-image: url(../pic-stu/logo.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	
+	/*我是老师*/
+	.teacher{
+		position: absolute;
+		right: 4%;
+		top: 4%;
+		width: 25%;
+		/*height: 5%;*/
+		height: 6rem;
+		background-color: white;
+		border-radius: 6rem;
+		text-align: center;
+	}
+	.teacher-span{
+		position: relative;
+		top: 50%;
+		line-height: 5%;
+		font-size: 3.5rem;
+		color: #A9A9A9;
+	}
+	
+
+	/*标语图片*/
+	.slogan{
+		position: absolute;
+		top: 29.82%;
+		left: 8.125%;
+		width: 83.75%;
+	}
+
+
+
+
+
+	/*下载按钮*/
+	.download{
+		position: absolute;
+		width: 40%;
+		height: 7%;
+		top:80%;
+		left: 30%;
+		background-color: #ED5858;
+		border-radius:7rem;
+		text-align: center;
+	}
+	/*下载按钮的文字*/
+	.download-span{
+		position: relative;
+		top:50%;
+		line-height: 8%;
+		font-size: 5rem;
+		color: white;
+	}
+
+
+	/*页面footer部分*/
+	.footer{
+		position: relative;
+		height: 5%;
+		color: #A9A9A9;
+		text-align: center;
+	}
+	/*用于文字居中，不知道在微信中是否支持*/
+	/*抵制uc，人人有责*/
+	.footer-span{
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -36rem;
+		margin-top: -1.5rem;
+		font-size: 3rem;
+		white-space:nowrap;
+	}
+}
+
+
+
+/*横向*/
+@media all and (orientation : landscape){
+	/*主体高度以及背景*/
+	.main{
+		position: relative;
+		height: 92.1%;
+		background-image: url(../pic-stu/background-heng.jpg);
+		background-position: 0% 50%;
+		background-size: cover;
+	}
+	.logo{
+		position: absolute;
+		top: 6.67%;
+		left: 3.08%;
+		width: 21.9%;
+		height: 6rem;
+		background-image: url(../pic-stu/logo.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+
+	/*我是老师的按钮*/
+	.teacher{
+		position: absolute;
+		top: 7.92%;
+		right:3.21%;
+		width: 13.9%;
+		height: 3rem;
+		background-color: white;
+		border-radius: 1.5rem;
+		text-align: center;
+	}
+	.teacher span{
+		font-size: 2rem;
+		color: #A9A9A9;
+		line-height: 3rem;
+	}
+
+
+
+
+
+
+	/*标语*/
+	.slogan{
+		position: absolute;
+		display: block;
+		width: 59.8%;
+		top:30.43%;
+		left: 20.07%;
+	}
+
+
+
+	/*下载*/
+	.download{
+		position: absolute;
+		bottom: 9.04%;
+		left: 38.58%;
+		width: 22.85%;
+		height: 5rem;
+		background-color: #ED5858;
+		border-radius: 3rem;
+		text-align: center;
+	}
+	.download span{
+		font-size: 2.5rem;
+		color: white;
+		line-height: 5rem;
+	}
+	
+
+
+	/*底部*/
+	.footer{
+		height: 7.9%;
+		position: relative;
+		color: #A9A9A9;
+		text-align: center;
+	}
+	.footer-span{
+		font-size: 2rem;
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-top: -1rem;
+		white-space:nowrap;
+		margin-left: -24rem;
+	}
+}

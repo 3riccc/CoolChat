@@ -1,0 +1,357 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>口语聊CoolChat - 您的专属外教陪练，随时随地练口语</title>
+<meta name="description" content="口语聊是一款连接外教和口语学习者的APP，精选优质英语母语国家外教，100%纯正口音，碎片化时间学习口语。"/>
+<meta name="keywords" content="外教，口语，英语口语"/><script>
+	/**
+	 * 客户端检测
+	 */
+	function IsPC() {
+		var userAgentInfo = navigator.userAgent;
+		var Agents = ["Android", "iPhone","SymbianOS", "Windows Phone","iPad", "iPod"];
+		var flag = true;
+		for (var v = 0; v < Agents.length; v++) {
+			if (userAgentInfo.indexOf(Agents[v]) > 0) {
+				flag = false;
+				break;
+			}
+		}
+		return flag;
+	}
+	if(IsPC()){
+	}else{
+		//跳转
+		window.location.href="CoolChat-Stu-mb.html";
+	}
+	</script>
+
+	<link rel="stylesheet" href="css/base.css">
+
+	<style>
+	html,body{
+		height: 100%;
+		font-size: "Microsoft Yahei";
+	}
+	/*主要的部分*/
+	.g-main{
+		height: 93.11%;
+		background-image: url(image/background.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	/*内容部分*/
+	.m-main{
+		position: relative;
+		width: 52.08%;
+		height:100%;
+		margin: 0 auto;
+	}
+
+	/*logo部分*/
+	.m-logo{
+		position: absolute;
+		/*top: 2.43%;*/
+		/*width: 21.2%;
+		height: 5.47%;*/
+		top: 24px;
+		width: 212px;
+		height: 54px;
+		background-image: url(image/logo.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+
+
+	/*关注我们*/
+	.m-contact{
+		position: absolute;
+		right: 0;
+		/*top: 3.05%;*/
+		/*height: 2.84%;*/
+		top: 40px;
+		height: 28px;
+		font-size: 13px;
+		font-weight: bold;
+		color: white;
+		display: flex;
+		align-items:center;
+	}
+	.m-contact img{
+		height: 100%;
+		display: inline;
+	}
+	.m-contact span{
+		white-space:nowrap;
+	}
+
+	.wechat,.weibo{
+		cursor: pointer;
+	}
+
+
+
+	/*我是老师*/
+	.teacher{
+		position: relative;
+		display: inline;
+		height: 100%;
+		width: 5rem;
+		background-color: white;
+		border-radius: 2.5rem;
+		color: #626262;
+		text-align: center;
+		font-size: 1rem;
+	}
+	.teacher span{
+		font-weight: normal;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform:translate(-50%,-50%);
+		-moz-transform:translate(-50%,-50%);
+		white-space:nowrap;
+	}
+
+
+
+	/*iphone*/
+	.iphone{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 77.1%;
+	}
+	.iphone img{
+		position: relative;
+		height: 100%;
+		z-index: 1;
+	}
+
+	/*app引导图*/
+	.app-lead{
+		position: absolute;
+		left: 6.75%;
+		bottom: 0;
+		width: 86.04%;
+		height:86.17%;
+		overflow: hidden;
+	}
+	#app-lead-pic{
+		z-index: 0;
+	}
+
+
+
+
+
+	/*二维码*/
+	.qrcode{
+		position: absolute;
+		top: 33.53%;
+		right: 0;
+		/*height: 27.05%;*/
+		height: 14rem;
+		background-color: white;
+		border-radius: 3px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.qrcode img{
+		display: block;
+		height: 98%;
+	}
+
+
+	/*两个下载按钮*/
+	.iphone-download,.android-download{
+		position: absolute;
+		right: 0;
+		width: 14rem;
+		height: 6.48%;
+		background-color: #ED5858;
+		border-radius: 32px;
+	}
+	.iphone-download:hover,.android-download:hover{
+		background-color: #FE5349;
+	}
+	
+	.iphone-download img,.android-download img{
+		height: 100%;
+		position: relative;
+		/*top: -50%;*/
+	}
+	.iphone-download{
+		top: 63.73%
+	}
+	.iphone-download div,.android-download div{
+		position: absolute;
+		top: 50%;
+		left : 50%;
+		-webkit-transform:translate(-50%,-50%);
+		-moz-transform:translate(-50%,-50%);
+		white-space:nowrap;
+		height: 60%;
+		color: white;
+		font-weight: bold;
+		font-size: 1.2rem;
+	}
+	.android-download{
+		top: 71.73%;
+	}
+
+	/*footer的部分*/
+	.g-footer{
+		position: relative;
+		height: 6.89%;
+		background-color: #F3F3F3;
+		color: #666666;
+	}
+	.footer-cont{
+		position: absolute;
+		top: 50%;
+		left : 50%;
+		-webkit-transform:translate(-50%,-50%);
+		-moz-transform:translate(-50%,-50%);
+		white-space:nowrap;
+	}
+
+	/*点击微信弹出二维码*/
+	/*弹出微信二维码时的全屏覆盖*/
+	.hide{
+		display: none;
+	}
+	.cover{
+		z-index:998;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		opacity: 0.7;
+	}
+	.cover-qrcode{
+		background-color: white;
+		border-radius: 3px;
+		z-index: 999;
+		background-image: url(image/wechat-qrcode.jpg);
+		background-size: 301px 301px;
+		background-position: 50% 0%;
+		background-repeat: no-repeat;
+		width: 301px;
+		height: 355px;
+		position:fixed;
+		left:0px;
+		right:0px;
+		margin: 10% auto;
+	}
+	.qrcode-info{
+		display: block;
+		margin-left: 26px;
+		margin-top: 300px;
+		bottom: 19px;
+		font-size: 27px; 
+		color:#333333;
+		font-family: "Microsoft Yahei";
+	}
+
+
+
+	</style>
+	<script src="scripts/jquery.js" type="text/javascript"></script>
+	<script>
+	
+
+	$(document).ready(function() {
+
+		$(".weibo").click(function(){
+			window.open('http://weibo.com/coolchat2015');
+		})
+		$('.wechat').click(function(){
+			$('.hide').show();
+		})
+		$(".hide").click(function(){
+			$('.hide').hide();
+		})
+		
+		function scroll(){
+			for(var i=1;i<1000;i++){
+				var pic = $("#app-lead-pic");
+				pic.delay(3000);
+				pic.animate({left:"-97%"},800);
+				pic.delay(3000);
+				pic.animate({left:"-194%"},800);
+				pic.delay(3000);
+				pic.animate({left:"-291%"},800);
+				pic.delay(3000);
+				pic.animate({left:"-388%"},800);
+				pic.animate({left:"0"},0);
+			}
+		}
+		scroll();
+	})
+	</script>
+</head>
+<body>
+	<!-- 显示微信二维码时覆盖全屏 -->
+	<div class="hide">
+		<div class="cover"></div>
+		<div class="cover-qrcode">
+			<span class="qrcode-info">微信公众号：口语聊</span>
+		</div>
+	</div>
+	<!-- 主体内容 -->
+	<div class="g-main">
+		<div class="m-main">
+			<!-- logo -->
+			<div class="m-logo"></div>
+			<!-- 关注我们 -->
+			<div class="m-contact">
+				<span>关注我们：</span>&nbsp
+				<img class="wechat" src="image/wechat.png" alt="">&nbsp&nbsp
+				<img class="weibo" src="image/weibo.png" alt="">&nbsp&nbsp&nbsp
+				<a href="CoolChat-teac-pc.html" class="teacher"><span>Teacher</span></a>
+			</div>
+			<!-- 左下手机页面 -->
+			<div class="iphone">
+				<img src="image/iphone.png" alt="">
+				<div class="app-lead">
+					<img id="app-lead-pic" src="image/app-lead.jpg" alt="">
+				</div>
+			</div>
+			<!-- 二维码 -->
+			<div class="qrcode">
+				<img src="image/qr-code.png" alt="">
+			</div>
+
+			<!-- 安卓和ios app下载 -->
+			<a href="https://appsto.re/cn/GbP_8.i" class="iphone-download">
+				<div>
+					<img src="image/iphone-icon.png" alt=""><span>&nbsp&nbsp iOS版下载</span>
+				</div>
+			</a>
+			<a href="http://android.myapp.com/myapp/detail.htm?apkName=com.abc360.coolchat" class="android-download">
+				<div>
+					<img src="image/android-icon.png" alt=""><span>&nbsp&nbsp Android版下载</span>
+				</div>
+			</a>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div class="g-footer">
+		<div class="footer-cont">
+			<span>杭州瓜蕉科技有限公司</span>&nbsp | &nbsp 杭州市滨江区江陵路567号新东方国际科技中心&nbsp |&nbsp 联系电话:0571-8558749 &nbsp|&nbsp <a href="Mailto:hi@kouyuliao.com">邮箱:hi@kouyuliao.com</a>
+		</div>
+	</div>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?7586c53c29979c0d6267017a1b028456";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script></body>
+</html>

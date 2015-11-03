@@ -1,0 +1,7 @@
+header高78px
+footer高64px
+footer-》杭州市瓜蕉字体：14px
+footer-》杭州市滨江字体：13px
+iphone版下载距离上边551px
+android版本下载距离上边630px
+他俩距离右边10px

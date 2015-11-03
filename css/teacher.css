@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/******margin-out居中******/
+.margin-out-1000, .inner-box, .header, .teacher-box {
+  width: 1000px;
+  margin: 0 auto; }
+
+.margin-out-800 {
+  width: 800px;
+  margin: 0 auto; }
+
+.l {
+  float: left; }
+
+.r {
+  float: right; }
+
+html, body {
+  background: url(../images/bg.jpg) no-repeat top center; }
+
+.inner-box {
+  overflow: hidden; }
+  .inner-box a{
+    color: #666666;
+  }
+
+.header {
+  height: 720px;
+  text-align: center; }
+  .header .top {
+    padding-top: 24px;
+    height: 54px;
+    line-height: 54px; }
+    .header .top:before, .header .top:after {
+      content: '';
+      display: table; }
+    .header .top:after {
+      clear: both;
+      overflow: hidden; }
+    .header .top .logo img {
+      float: left; }
+    .header .top .chat {
+      float: right;
+      font-size: 12px; }
+      .header .top .chat dt {
+        float: left;
+        color: #fff;
+        font-family: "Microsoft Yahei"; }
+      .header .top .chat dd {
+        float: left;
+        margin-top: 15px; }
+        .header .top .chat dd a {
+          float: left;
+          background: #fff; }
+          .header .top .chat dd a.ico-box {
+            width: 26px;
+            height: 26px;
+            margin-left: 6px;
+            background: url(../images/chat-ico.png) no-repeat 0 0; }
+            .header .top .chat dd a.ico-box.facebook {
+              background-position: -26px 0; }
+          .header .top .chat dd a.btn-s {
+            width: 87px;
+            height: 27px;
+            line-height: 27px;
+            text-align: center;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -o-border-radius: 15px;
+            border-radius: 15px;
+            color: #666;
+            font-size: 13px;
+            margin-left: 15px; }
+  .header .text {
+    margin-top: 214px; }
+  .header .btn {
+    display: block;
+    margin: 50px auto 0;
+    width: 166px;
+    height: 49px;
+    line-height: 49px;
+    background: #ff4439;
+    color: #fff;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    font-family: "MyriadProB";
+    font-size: 14px; }
+    .header .btn:hover {
+      background: #ff362a; }
+
+.red-line {
+  width: 100%;
+  min-width: 1000px;
+  height: 6px;
+  background: #ed5858; }
+
+.teacher-box {
+  margin-top: 80px; }
+  .teacher-box .left-right-list:before, .teacher-box .left-right-list:after {
+    content: '';
+    display: table; }
+  .teacher-box .left-right-list:after {
+    clear: both;
+    overflow: hidden; }
+  .teacher-box .left-right-list li {
+    width: 490px;
+    height: 240px; }
+    .teacher-box .left-right-list li img {
+      float: left; }
+    .teacher-box .left-right-list li .text {
+      position: relative;
+      width: 275px;
+      height: 240px;
+      float: left;
+      background: #f6f8f9;
+      color: #666; }
+      .teacher-box .left-right-list li .text .arrow {
+        position: absolute;
+        width: 25px;
+        height: 26px;
+        top: 43px;
+        left: -25px;
+        background: url(../images/arrow.png) no-repeat; }
+      .teacher-box .left-right-list li .text h6 {
+        position: relative;
+        font-size: 20px;
+        color: #333;
+        padding-left: 13px;
+        margin: 30px 0 19px 25px; }
+        .teacher-box .left-right-list li .text h6 .ico-line {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 2px;
+          height: 15px;
+          margin-top: -7px;
+          background: #ff715a; }
+      .teacher-box .left-right-list li .text p {
+        line-height: 17px;
+        padding-left: 25px; }
+        .teacher-box .left-right-list li .text p:before, .teacher-box .left-right-list li .text p:after {
+          content: '';
+          display: table; }
+        .teacher-box .left-right-list li .text p:after {
+          clear: both;
+          overflow: hidden; }
+        .teacher-box .left-right-list li .text p i {
+          float: left;
+          width: 5%;
+          font-style: normal; }
+        .teacher-box .left-right-list li .text p span {
+          width: 95%;
+          float: right; }
+
+.rule-box {
+  width: 100%;
+  min-width: 1000px;
+  background: #f8f8f8;
+  margin-top: 80px; }
+  .rule-box .list {
+    padding-top: 90px;
+    padding-bottom: 88px; }
+    .rule-box .list:before, .rule-box .list:after {
+      content: '';
+      display: table; }
+    .rule-box .list:after {
+      clear: both;
+      overflow: hidden; }
+    .rule-box .list li {
+      float: left;
+      width: 28%;
+      text-align: center;
+      margin-right: 80px; }
+      .rule-box .list li h6 {
+        font-size: 21px;
+        color: #222;
+        margin: 32px 0 15px 0; }
+      .rule-box .list li p {
+        color: #666; }
+      .rule-box .list li:last-child {
+        margin-right: 0; }
+
+.footer {
+  width: 100%;
+  min-width: 1000px;
+  height: 89px;
+  background: #eee; }
+  .footer p {
+    float: left;
+    height: 89px;
+    line-height: 89px;
+    font-size: 15px;
+    margin-right: 60px;
+    color: #333; }
+  .footer span {
+    float: left;
+    line-height: 20px;
+    font-size: 12px;
+    color: #666;
+    margin-top: 24px; }
+
+.pop {
+  display: none;
+  color: #666;
+  font-size: 16px;
+  width: 487px;
+  height: 245px;
+  position: relative;
+  margin: 0 auto; }
+  .pop .text {
+    padding-left: 32px;
+    padding-top: 24px; }
+    .pop .text p {
+      line-height: 24px;
+      padding-top: 20px; }
+      .pop .text p span {
+        color: #ed5858; }
+  .pop .download {
+    display: block;
+    margin: 20px auto 0;
+    width: 135px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    background: #ed5858; }
+  .pop .close {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../images/close.png) no-repeat; }
+
+/*# sourceMappingURL=teacher.css.map */

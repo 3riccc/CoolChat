@@ -1,0 +1,129 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CoolChat - Turn English into gold treasure</title>
+	<script>
+	/**
+	 * 客户端检测
+	 */
+	function IsPC() {
+		var userAgentInfo = navigator.userAgent;
+		var Agents = ["Android", "iPhone","SymbianOS", "Windows Phone","iPad", "iPod"];
+		var flag = true;
+		for (var v = 0; v < Agents.length; v++) {
+			if (userAgentInfo.indexOf(Agents[v]) > 0) {
+				flag = false;
+				break;
+			}
+		}
+		return flag;
+	}
+	if(IsPC()){
+	}else{
+		//跳转
+		window.location.href="CoolChat-teac-mb.html";
+	}
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/teacher.css">
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="top">
+			<a href="###" class="logo"><img src="images/logo.png"></a>
+			<dl class="chat">
+				<dt>follow us：</dt>
+				<dd>
+					<a href="https://twitter.com/coolchat2015" class="ico-box twitter" target="_blank"></a>
+					<a href="https://www.facebook.com/kouyuliao/info/?tab=page_info" class="ico-box facebook" target="_blank"></a>
+					<a href="CoolChat-Stu-pc.html" class="btn-s">Student</a>
+				</dd>
+			</dl>
+		</div>
+		<img class="text" src="images/banner-text.png">
+		<a href="#pop" class="btn fancybox">Be  A TEACHER</a>
+	</div>
+	<div class="red-line"></div>
+	<div class="teacher-box">
+		<ul class="left-right-list">
+			<li class="l">
+				<img src="images/teacher/1.jpg">
+				<div class="text">
+					<i class="arrow"></i>
+					<h6><i class="ico-line"></i>How to get started</h6>
+					<p><i class="num">1.</i><span>Near native speaker English level,<br>teaching experienced preferred.</span></p>
+					<p><i class="num">2.</i><span>Fast and stable network connection<br>and quiet working environment.</span></p>
+					<p><i class="num">3.</i><span>Install CoolChat on your smart<br>phone/tablet and switch to teacher<br>interface.<br>That’s how you get started!</span></p>
+				</div>
+			</li>
+			<li class="r">
+				<img src="images/teacher/2.jpg">
+				<div class="text">
+					<i class="arrow"></i>
+					<h6><i class="ico-line"></i>How to get your pay</h6>
+					<p>After each conversation on CoolChat, <br>you will get your compensation based <br>on the duration of the conversation.<br> Full-timers also get a relatively high <br>guarantee pay each month, we will <br>transfer it to your BPI account or other <br>types of bank accounts at the begin-ning of each month.</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="rule-box">
+		<div class="inner-box">
+			<ul class="list">
+				<li>
+					<img src="images/rule/1.png">
+					<h6>Pay&Reward</h6>
+					<p>4 hours work turns you into one of those well paid crowd.</p>
+				</li>
+				<li>
+					<img src="images/rule/2.png">
+					<h6>Easy&no Pressure</h6>
+					<p>Flexible working hours, with your phone on, you could make money anywhere anytime.</p>
+				</li>
+				<li>
+					<img src="images/rule/3.png">
+					<h6>Share&iInteresting</h6>
+					<p>Share with your friends,now !</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="inner-box">
+			<p>GuaJiao Technology Co.,Ltd. </p>
+			<span>Rm.1202, Xindongfang Science&Technology Building, No.567, Jiangling Rd, Binjiang District, Hangzhou<br><a href="Mailto:hi@kouyuliao.com">Email : hi@kouyuliao.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;skype : coolchat2015&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- BD: 579646341@163.com --></span>
+		</div>
+	</div>
+	<!-- 弹出框 -->
+	<div class="pop" id="pop">
+		<a href="javascript:$.fancybox.close();" class="close"></a>
+		<div class="text">
+			<p>Download the application form and send it to <span>hi@kouyuliao.com</span>.<br>We will contact you in 48 hours.</p>
+			<p>Any inquiries,please send us emails to hi@kouyuliao.com<br>or you could add skype:live:coolchat2015.</p>
+		</div>
+		<a href="http://download.kouyuliao.com/file/apply.xls" class="download">Download Excel</a>
+	</div>    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?7586c53c29979c0d6267017a1b028456";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script></body>
+<!-- 弹出框 -->
+<link rel="stylesheet" type="text/css" href="js/Fancybox/source/jquery.fancybox.css">
+<script type="text/javascript" src="js/Fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="js/Fancybox/source/jquery.fancybox.js"></script>
+<script type="text/javascript">
+	if($(".fancybox")[0]){
+		$(".fancybox").fancybox({
+			padding:0,
+			margin:0,
+			autoSize:true,
+			closeBtn:false
+		});
+	}
+</script>
+</html>

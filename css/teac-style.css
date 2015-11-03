@@ -1,0 +1,212 @@
+/*最顶部*/
+.header{
+	position: relative;
+}
+.logo{
+	position: absolute;
+	left: 5%;
+	top: 6rem;
+	width: 39%;
+	height: 12rem;
+	background-image: url(../pic-stu/logo.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+
+/*是学生*/
+.student{
+	position: absolute;
+	right: 5%;
+	top: 7.8rem;
+	background-color: white;
+	border-radius: 5rem;
+	font-size: 3.5rem;
+	color: #666666;
+	width:23.75%;
+	height: 6rem;
+	text-align: center;
+}
+.student span{
+	display: inline;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -1.75rem;
+	margin-left: -6rem;
+	color: #AFAFAF;
+}
+/*最顶部的notice*/
+.header-cont{
+	background-color: white;
+	opacity: 0.8;
+	border-radius: 1rem;
+}
+.header-notice,.header-cont{
+	position: absolute;
+	left: 4.2%;
+	right: 4.2%;
+	top: 29.7%;
+	bottom: 13.8%;
+	color:#333333;
+	font-size: 3.2rem;
+	word-break:break-all;
+}
+.header-notice{
+}
+/*上面那条通知*/
+.notice-top{
+	position: absolute;
+	left: 5.7%;
+	top: 12.7%;
+	right: 5.7%;
+	bottom: 73.4%;
+	/*overflow: hidden;*/
+}
+.notice-top>span{
+	color:#ED5858;
+}
+/*中间那条通知*/
+.notice-mid{
+	position: absolute;
+	top: 39.5%;
+	left: 5.7%;
+	right: 5.7%;
+	bottom: 46.6%;
+	/*overflow: hidden;*/
+}
+.header>img{
+	width: 100%;
+}
+/*下载excel*/
+.download-excel{
+	position: absolute;
+	width: 31.8%;
+	/*height: 20%;*/
+	height: 8rem;
+	top:72%;
+	left: 34.1%;
+	background-color: #ED5858;
+	border-radius: 5rem;
+	text-align: center;
+}
+/*为了兼容内核古老的uc，我们并没有使用高端布局方法*/
+.download-excel span{
+	display: inline;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 3rem;
+	margin-top: -1.5rem;
+	margin-left: -10.4rem;
+	white-space:nowrap;
+	color: white;
+}
+
+/*how to get started 部分*/
+.intro{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.intro1,.intro2{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+/*左侧图片和图片处理*/
+.container{
+	position: relative;
+	margin:0 auto;
+	margin-top: 6.9rem;
+	background-color: #F6F8F9;
+	width: 91.6%;
+	height: 100%;
+}
+.cover{
+	position: absolute;
+	left: 0px;
+}
+/*右侧和右侧文字处理*/
+.right{
+	width: 51.3%;
+	float: right;
+	height: 100%;
+}
+.title,.content{
+	position: absolute;
+	left: 48.5%;
+}
+.title{
+	top:7%;
+	font-size: 4rem;
+	font-weight: bold;
+}
+.content{
+	top:22%;
+	padding-left: 2.6rem;
+	text-indent: -2.6rem;
+	font-size: 2.8rem;
+	color: #666666;
+}
+.normal{
+	padding-left: 0px;
+	text-indent: 0rem;
+}
+/*第三部分，特点*/
+.pay,.easy,.share{
+	position: relative;
+	width: 100%;
+	background-color: #F6F8F9;
+}
+.pay{
+	margin-top: 6rem;
+}
+.share{
+	padding-bottom: 10rem;
+}
+.pay>img,.easy>img,.share>img{
+	display: block;
+	margin: 0 auto;
+	padding-top: 10rem;
+	padding-bottom: 4rem;
+	width: 17.5%;
+}
+.feature-title{
+	font-weight: bold;
+	font-size: 6rem;
+	text-align: center;
+	line-height: 8rem;
+}
+.feature-content{
+	font-size: 3rem;
+	color:#666666;
+	width: 91.6%;
+	margin: 0 auto;
+	text-align: center;
+}
+.footer{
+	position: relative;
+	background-color: #EDEDED;
+	height: 6rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	font-size: 2rem;
+	padding-left: 5%;
+	line-height: 3rem;
+	color:#999999;
+}
+.right{
+	display: inline;
+	position: absolute;
+	right: 5%;
+	top: 2rem;
+	text-align: right;
+	height: 6rem;
+}
+.right img{
+	height: 6rem;
+}

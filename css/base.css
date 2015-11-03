@@ -1,0 +1,45 @@
+body,h1,h2,h3,p,dl,dd,ol,ul,th,td,form,fieldset,input,button,textarea{margin:0;padding:0}
+html{font-family:"Helvetica Neue",Helvetica,STHeiTi,Arial,sans-serif;-webkit-text-size-adjust:none;word-wrap:break-word;font-size:62.5%;}
+h1,h2,h3{font-size:100%}
+ol,ul{list-style:none}
+table{border-collapse:collapse;border-spacing:0;empty-cells:show;font-size:inherit}
+fieldset,img{border:0}
+cite,em,s,i,b{font-style:normal}
+input,button,textarea,select{font-size:100%}
+body,input,button,textarea,select,option{font-size:inherit}
+a,input,textarea{text-decoration:none;outline:0}
+a{background:transparent;text-decoration:none;-webkit-tap-highlight-color:transparent;color:inherit;}
+a:active{outline:0;}
+li,img,label,input{vertical-align:middle}
+var{font-style:normal}
+ins{text-decoration:none}
+.viewport{max-width:1080px; margin:0 auto; position:relative; min-width:320px; }
+.hide{display:none}
+.abs { position:absolute;}
+.clearfix:before,.clearfix:after{display: table;content: " ";}
+.clearfix:after{clear: both;}
+.imgurl img{width:100%}
+body,h1,h2,h3,p,dl,dd,ol,ul,th,td,form,fieldset,input,button,textarea{margin:0;padding:0}
+html{font-family:"Helvetica Neue",Helvetica,STHeiTi,Arial,sans-serif;-webkit-text-size-adjust:none;word-wrap:break-word}
+h1,h2,h3{font-size:100%}
+ol,ul{list-style:none}
+table{border-collapse:collapse;border-spacing:0;empty-cells:show;font-size:inherit}
+fieldset,img{border:0}
+cite,em,s,i,b{font-style:normal}
+/*app端的base*/
+input,button,textarea,select{font-size:100%}
+body,input,button,textarea,select,option{font-size:inherit}
+a,input,textarea{text-decoration:none;outline:0}
+a{background:transparent;text-decoration:none;-webkit-tap-highlight-color:transparent;color:inherit;}
+a:active{outline:0;}
+li,img,label,input{vertical-align:middle}
+var{font-style:normal}
+ins{text-decoration:none}
+.viewport{ margin:0 auto;overflow:hidden; width:100%; }
+.hide{display:none}
+.clearfix:before,.clearfix:after{display: table;content: " ";}
+.clearfix:after{clear: both;}
+.h_box{display:-webkit-box;display:box;width:100%}
+.imgurl{display:block; width:98%; margin:0 auto;}
+.imgurl img{width:100%}
+
